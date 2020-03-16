@@ -11,7 +11,7 @@ class Solution(object):
             # First, check whether complement equals num
             if complement == num:
                 indices = [index for index, value in enumerate(nums) if value == num]
-                if len(indices) > 1: return indices
+                return indices if len(indices) > 1
                 
             elif complement in nums:
                 j = nums.index(complement)
