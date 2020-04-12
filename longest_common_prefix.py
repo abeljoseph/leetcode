@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/longest-common-prefix/
+
 class Solution(object):
     def longestCommonPrefix(self, strs):
         """

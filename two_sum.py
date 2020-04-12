@@ -9,13 +9,13 @@ class Solution(object):
         """
         for i, num in enumerate(nums):
             complement = target - num
-            
+
             # First, check whether complement equals num
             if complement == num:
                 indices = [index for index, value in enumerate(nums) if value == num]
-                return indices if len(indices) > 1
-                
+                if len(indices) > 1: return indices
+
             elif complement in nums:
                 j = nums.index(complement)
-                return [i,j]
-            
+                return [i, j]
+
