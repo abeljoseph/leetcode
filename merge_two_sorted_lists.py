@@ -10,10 +10,8 @@ class ListNode:
 class Solution:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         if not l1 or not l2:
-            if l1:
-                return l1
-            elif l2:
-                return l2
+            if l1: return l1
+            elif l2: return l2
             return
 
         head = ListNode(None)
